@@ -1,0 +1,265 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Healthy Food and Nutrition</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f9f2;
+        }
+
+        header {
+            background-color: #287a46;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        nav {
+            background-color: #185b32;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 12px;
+        }
+
+        nav a:hover {
+            color: #ffe082;
+        }
+
+        .banner {
+            background-color: #d8edc8;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .banner h2 {
+            color: #185b32;
+            font-size: 30px;
+        }
+
+        .banner p {
+            font-size: 18px;
+        }
+
+        .container {
+            padding: 30px;
+            text-align: center;
+        }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .card {
+            background-color: white;
+            width: 250px;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 3px 8px #cccccc;
+            text-align: left;
+        }
+
+        .card h3 {
+            color: #287a46;
+        }
+
+        .card p {
+            line-height: 1.6;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card button {
+            background-color: #287a46;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+        }
+
+        .tips {
+            background-color: #e5f3df;
+            padding: 25px;
+            text-align: left;
+            max-width: 700px;
+            margin: auto;
+            border-radius: 10px;
+        }
+
+        footer {
+            background-color: #185b32;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 600px) {
+            nav a {
+                display: inline-block;
+                margin: 8px;
+            }
+
+            .container {
+                padding: 15px;
+            }
+
+            .card {
+                width: 100%;
+            }
+
+            .banner h2 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Healthy Bites</h1>
+        <p>Eat Healthy | Live Better</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#categories">Food Categories</a>
+        <a href="#recipes">Recipes</a>
+        <a href="#mealplan">Meal Plans</a>
+        <a href="#tips">Health Tips</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section class="banner" id="home">
+        <h2>Welcome to Healthy Bites!</h2>
+        <p>Discover delicious recipes and simple ways to eat well.</p>
+        <a href="#recipes">
+            <button>Explore Recipes</button>
+        </a>
+    </section>
+
+    <section class="container" id="categories">
+        <h2>Food Categories</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>🥦 Vegetables</h3>
+                <p>Spinach, carrots, broccoli and other vegetables.</p>
+            </div>
+
+            <div class="card">
+                <h3>🍎 Fruits</h3>
+                <p>Apples, bananas, oranges and seasonal fruits.</p>
+            </div>
+
+            <div class="card">
+                <h3>🌾 Whole Grains</h3>
+                <p>Oats, brown rice, whole wheat and millets.</p>
+            </div>
+
+            <div class="card">
+                <h3>🥜 Protein Foods</h3>
+                <p>Beans, lentils, eggs, nuts and tofu.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container" id="recipes">
+        <h2>Healthy Recipes</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>🥣 Vegetable Oats</h3>
+                <p><b>Ingredients:</b></p>
+                <p>Oats, carrots, peas, onion and water.</p>
+                <p><b>Preparation:</b> Cook oats with vegetables
+                and water until soft.</p>
+                <p><b>Calories:</b> About 250 kcal per serving.</p>
+            </div>
+
+            <div class="card">
+                <h3>🥗 Fresh Fruit Salad</h3>
+                <p><b>Ingredients:</b></p>
+                <p>Apple, banana, orange and grapes.</p>
+                <p><b>Preparation:</b> Wash, cut and mix the fruits.</p>
+                <p><b>Calories:</b> About 150 kcal per serving.</p>
+            </div>
+
+            <div class="card">
+                <h3>🥗 Sprout Salad</h3>
+                <p><b>Ingredients:</b></p>
+                <p>Sprouts, cucumber, tomato and lemon juice.</p>
+                <p><b>Preparation:</b> Mix the ingredients
+                and add lemon juice.</p>
+                <p><b>Calories:</b> About 180 kcal per serving.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container" id="mealplan">
+        <h2>Daily Meal Plan</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>🌅 Breakfast</h3>
+                <p>Idli, vegetable upma or oats with fruit.</p>
+            </div>
+
+            <div class="card">
+                <h3>☀️ Lunch</h3>
+                <p>Rice or roti, dal, vegetables and curd.</p>
+            </div>
+
+            <div class="card">
+                <h3>🌇 Evening Snack</h3>
+                <p>Seasonal fruit, nuts or roasted chickpeas.</p>
+            </div>
+
+            <div class="card">
+                <h3>🌙 Dinner</h3>
+                <p>Roti, vegetables and a protein-rich food.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container" id="tips">
+        <h2>Healthy Eating Tips</h2>
+
+        <div class="tips">
+            <p>✔ Eat a variety of fruits and vegetables.</p>
+            <p>✔ Include protein-rich foods in your meals.</p>
+            <p>✔ Choose whole grains regularly.</p>
+            <p>✔ Drink enough water throughout the day.</p>
+            <p>✔ Limit excess salt, added sugar and highly
+            processed foods.</p>
+            <p>✔ Enjoy balanced meals and eat regularly.</p>
+        </div>
+    </section>
+
+    <section class="container" id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: healthybites@example.com</p>
+        <p>Phone: +91 98765 43210</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Healthy Bites</p>
+        <p>Eat Well, Feel Well!</p>
+    </footer>
+
+</body>
+</html>
